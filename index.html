@@ -14,62 +14,50 @@
     <!-- start codes -->
 
     <!-- Form -->
-    <form action="#" method="get" autocomplete="on">
-        <!-- Adı -->
-        <div>
-            <label for="adi">Adı:</label>
-            <input 
-            id="adi"
-            name="adi"
-            type="text"
-            placeholder="Adınızı yazınız"
-            required
-            autofocus="true"
-            title="Lütfen adınızı giriniz.">
-        </div>
+    <table>
+        <form action="#" method="get" autocomplete="on">
+            <!-- Adı -->
+                <tr>
+                    <td><label for="adi">Adı:</label></td>
+                    <td>
+                        <input id="adi" name="adi" type="text" placeholder="Adınızı yazınız" required autofocus="true"
+                            title="Lütfen adınızı giriniz.">
+                    </td>
+                </tr>
+           
+            <!-- Soyadı -->
+                <tr>
+                    <td><label for="soyadi">Soyadı:</label></td>
+                    <td>
+                        <input id="soyadi" name="soyadi" type="text" placeholder="soyadi yazınız" required
+                            autofocus="true" title="Lütfen soyadi giriniz.">
+                    </td>
+                </tr>
 
-        <!-- Soydı -->
-        <div>
-            <label for="soyadi">Soyadı:</label>
-            <input 
-            id="soyadi"
-            name="soyadi"
-            type="text"
-            placeholder="Soyadınızı yazınız"
-            required
-            autofocus="false"
-            title="Lütfen soyadınızı giriniz.">
-        </div>
+            <!-- Email -->
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td>
+                        <input id="email" name="email" type="email" placeholder="email yazınız" required
+                            autofocus="true" title="Lütfen email giriniz.">
+                    </td>
+                </tr>
 
-        <!-- Email -->
-        <div>
-            <label for="email">Email:</label>
-            <input 
-            id="email"
-            name="email"
-            type="email"
-            placeholder="email yazınız"
-            required
-            autofocus="false"
-            title="Lütfen email giriniz.">
-        </div>
+            <!-- Şifre -->
+                <tr>
+                    <td><label for="password">Şifre:</label></td>
+                    <td>
+                        <input id="password" name="password" type="password" placeholder="password yazınız" required
+                            autofocus="false" title="Lütfen password giriniz.">
+                    </td>
+                </tr>
 
-        <!-- Şifre -->
-        <div>
-            <label for="sifre">Şifre:</label>
-            <input 
-            id="sifre"
-            name="sifre"
-            type="password"
-            placeholder="Şifre yazınız"
-            required
-            autofocus="false"
-            title="Lütfen Şifre giriniz.">
-        </div>
-
-        <input type="reset" value="Temizle" />
-        <button type="submit">Gönder</button>
-    </form>
+                <tr>
+                    <td><input type="reset" value="Temizle" /></td>
+                    <td><button type="submit">Gönder</button></td>
+                </tr>
+        </form>
+    </table>
 
     <hr>
     <a href="http://www.ecodation.com" target="_blank" rel="noopener noreferrer">Click Me!</a>
