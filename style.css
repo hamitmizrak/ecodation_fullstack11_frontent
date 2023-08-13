@@ -6,7 +6,7 @@ p {
     color: #0cae23;
     color: rgb(0, 12, 55);
     color: rgba(255, 255, 255, 0.9);
-    
+
     background-color: blue;
 
     margin-top: 10px;
@@ -28,4 +28,18 @@ p {
 
     border:10px solid yellow;
     cursor: pointer;
+
+    text-align: justify;
+    text-decoration: underline;
+    text-shadow: 0.4px 0.1px yellow;
+    text-indent: 5%;
+    text-transform: capitalize;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+    line-height: 10px;
+
+    font-size: 12px;
+    font-weight: 900;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
