@@ -220,38 +220,93 @@
 // Normal function,  Anonymous Function, Arrow Functrion, Immedia Function
 
 // Normal function, 
-function normalFunction(){
-    console.log("Normal Function");
-}
-normalFunction();
+// function normalFunction(){
+//     console.log("Normal Function");
+// }
+// normalFunction();
 
 
 // Anonymous Function,
-let anonymousFunction= function (){
-    console.log("anonymous Function");
-}
-anonymousFunction();
+// let anonymousFunction= function (){
+//     console.log("anonymous Function");
+// }
+// anonymousFunction();
 
 // Arrow Function,
-let arrowFunction=  ()=>{
-    console.log("arrow  Function");
-}
-arrowFunction();
+// let arrowFunction=  ()=>{
+//     console.log("arrow  Function");
+// }
+// arrowFunction();
 
 // Immedia Function ()()
-(function (){
-    console.log("Immedia Function Anonymous");
-})();
-( ()=>{
-    console.log("Immedia Function Arrow");
-})();
+// (function (){
+//     console.log("Immedia Function Anonymous");
+// })();
+// ( ()=>{
+//     console.log("Immedia Function Arrow");
+// })();
 
 
 
 ///////////////////////////////////////////////////////////////////////////
 // Contional()
+(() => {
+    let number = 4;
+    if (number > 0) {
+        console.log("Pozitif sayı");
+    } else {
+        console.log("Negatif sayı");
+    }
+})();
 
-// ÖDEV: 
+(() => {
+    let number = 4;
+    let result = (number > 0) ? "Pozitif sayı" : "Negatif sayı";
+    console.log(result);
+})();
+
+(() => {
+    let number = 4;
+    if (number == 1) {
+        console.log("1");
+    } else if (number === 2) {
+        console.log("2");
+    } else if (number === 3) {
+        console.log("3");
+    } else if (number === 4) {
+        console.log("4");
+    } else if (number === 5) {
+        console.log("5");
+    } else {
+        console.log("1<=sayı<=5 dışındadır");
+    }
+})();
+
+(() => {
+    let number = 4;
+    switch (number) {
+        case 1:
+            console.log("1");
+            break;
+        case 2:
+            console.log("2");
+            break;
+        case 3:
+            console.log("3");
+            break;
+        case 4:
+            console.log("4");
+            break;
+        case 5:
+            console.log("5");
+            break;
+        default:
+            console.log("1<=sayı<=5 dışındadır");
+            break;
+    }
+})();
+
+// ÖDEV:
 // Kullanıcı tarafından girilen bir sayının negatif mi, pozitif mi ? bunu yazan JS code yazınız.
 // (Dikkat: normal  function ile yazınız)
 
@@ -263,15 +318,12 @@ arrowFunction();
 // Kullanıcıdan alınan sayıya göre Haftanın günlerini switch-case ile JS code yazınız?
 // Örneğin: kullanıcı 1 girdi: 1=pazartesi yazacak
 
-
-
-
 ///////////////////////////////////////////////////////////////////////////
 // Loop()
 
 // break, return, continue
 
-// ÖDEV 
+// ÖDEV
 // kullanıcıdan aldığımız isim soyisim (boşluk var)
 // ilk karakter göstersin sonraki kelimeleri masking (maskeleme yapsın)
 // eğer kullanıcı isim ve soyisimi ilk karakteri küçük girmişse büyük olsun mutlaka
