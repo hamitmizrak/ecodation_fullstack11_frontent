@@ -154,22 +154,22 @@
 
 /////////////////////////////////////////////////// 
 // String 
-let value="JAVAscript öğreniyorum JAVAscript ";
-console.log(value);
-console.log(value.length);
-console.log(value.trim().length);
-console.log(value.toUpperCase());
-console.log(value.toLowerCase());
-console.log(value.indexOf("JAVAscript"));
-console.log(value.lastIndexOf("JAVAscript"));
-console.log(value.charAt(0));
-console.log(value.charAt(value.length-2));
-console.log(value.substring(1));
-console.log(value.substring(0,4)); // 0<=X<=4-1
-console.log(value.concat(" -sona eklendi"));
-console.log(value.replace(value," java"));
-console.log(value.startsWith("J"));
-console.log(value.endsWith(" "));
+// let value="JAVAscript öğreniyorum JAVAscript ";
+// console.log(value);
+// console.log(value.length);
+// console.log(value.trim().length);
+// console.log(value.toUpperCase());
+// console.log(value.toLowerCase());
+// console.log(value.indexOf("JAVAscript"));
+// console.log(value.lastIndexOf("JAVAscript"));
+// console.log(value.charAt(0));
+// console.log(value.charAt(value.length-2));
+// console.log(value.substring(1));
+// console.log(value.substring(0,4)); // 0<=X<=4-1
+// console.log(value.concat(" -sona eklendi"));
+// console.log(value.replace(value," java"));
+// console.log(value.startsWith("J"));
+// console.log(value.endsWith(" "));
 
 // Örnek: 
 // ÖDEV NOT:5 adımı beraber yapalım
@@ -179,7 +179,7 @@ console.log(value.endsWith(" "));
 // S-2) boşluklar alınarak Kaç karakterlidir ? (trim)
 // S-3) bütün kelimeyi küçük harfle göstermek ? (toLowerCase())
 // S-4) bütün kelimeyi büyük harfle göstermek ? (toUpperCase())
-// S-5) Kullanıcıdan alınan ilk kelimeyle , "javascript" kelimeyle değiştirin. (replace, substring, indexOf)
+// S-5) Kullanıcıdan alınan ilk kelimeyle , "javascript" kelimeyle değiştirin. (replace, substring(0, st.indexOf(" ")), indexOf)
 // console.log(userData.replace("xxxxxxx"),"javascript");
 // console.log(userData.replace(userData.substring(0,userData.indexOf(" ")),"javascript"));
 // S-6) yazdığınız kelimede "javascript ile mi başlıyor" ? (startsWith()) 
@@ -189,7 +189,32 @@ console.log(value.endsWith(" "));
 // S-10) girdiğiniz 0 ile 4 arasındaki indexi ekranda gösterin? (subString())
 
 /////////////////////////////////////////////////// 
-
 // Function 
+// 1-) retursuz Parametresiz
+function retursuzParametresiz() {
+    console.log("retursuz Parametresiz");
+}
+retursuzParametresiz();
 
-// Normalş function,  Anonymous Function, Arrow Functrion, Immedia Function
+// 2-) retursuz Parametreli
+function retursuzParametreli(number) {
+    console.log("retursuz Parametreli: " + Math.pow(number, 2));
+}
+retursuzParametreli(9);
+
+// 3-) returlu Parametresiz
+function returluParametresiz() {
+    return "returlı Parametresiz";
+}
+let data3=returluParametresiz();
+console.log(data3);
+
+// 4-) returlu Parametreli
+function returluParametreli(value) {
+    return "returlı Parametreli "+ value;
+}
+let data4=returluParametreli("asdasd");
+console.log(data4);
+
+///////////////////////////////////////////////////////////////////////////
+// Normal function,  Anonymous Function, Arrow Functrion, Immedia Function
