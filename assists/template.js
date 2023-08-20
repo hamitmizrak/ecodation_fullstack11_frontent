@@ -358,9 +358,7 @@
     } while (i <= 9);
 })();
 
-
 // break, return, continue
-
 // ÖDEV
 // kullanıcıdan aldığımız isim soyisim (boşluk var)
 // ilk karakter göstersin sonraki kelimeleri masking (maskeleme yapsın)
@@ -368,3 +366,18 @@
 // Hamit Mızrak
 // H**** MIZ***
 // ipucu: charAt, substring, indexOf, döngü, karar mekanizma
+
+///////////////////////////////////////////////////////////////////////////
+
+// try-catch
+// Array
+
+///////////////////////////////////////////////////////////////////////////
+// Object
+// DOM
+// Event
+// EventListener
+
+
+///////////////////////////////////////////////////////////////////////////
+// Callbackfnc, promise, asyn-await
