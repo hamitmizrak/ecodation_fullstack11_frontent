@@ -67,7 +67,6 @@
 // null 
 // zero
 
-
 //////////////////////////////////////////////// 
 // Örnek-1
 // Kullanıcıdan aldığımız 2 sayıyı toplayan JS kodu yazınız ? (prompt)
@@ -103,21 +102,21 @@
 
 /////////////////////////////////////////////////// 
 // MATH
-console.log(Math.PI);
-console.log(Math.E);
-console.log(Math.min(3,5,6,99,100,-500));
-console.log(Math.max(3,5,6,99,100,-500));
-console.log(Math.abs(-500));
-console.log(Math.abs(500));
-console.log(Math.sqrt(25));
-console.log(Math.pow(2,5));
-console.log(Math.floor(5.9));
-console.log(Math.ceil(7.000001));
-console.log(Math.round(3.4));
-console.log(Math.round(3.5));
-console.log(Math.round(Math.random()*9+1));
-console.log(Math.sin(45));
-console.log(Math.asin(1));
+// console.log(Math.PI);
+// console.log(Math.E);
+// console.log(Math.min(3,5,6,99,100,-500));
+// console.log(Math.max(3,5,6,99,100,-500));
+// console.log(Math.abs(-500));
+// console.log(Math.abs(500));
+// console.log(Math.sqrt(25));
+// console.log(Math.pow(2,5));
+// console.log(Math.floor(5.9));
+// console.log(Math.ceil(7.000001));
+// console.log(Math.round(3.4));
+// console.log(Math.round(3.5));
+// console.log(Math.round(Math.random()*9+1));
+// console.log(Math.sin(45));
+// console.log(Math.asin(1));
 
 //// MATH ÖDEVİ
 // Math Ödev
@@ -128,6 +127,15 @@ console.log(Math.asin(1));
 // s4-) Bu sayılardan en büyüğü karekökünün üste yuvarlıyalım nedir ? (ceil(sqrt(max)))
 // s5-) Bu sayılardan en küçüğü mutlak değeri nedir ? (abs(min))
 // s6-) Bu sayılardan en küçüğü alt taban en büyüğü üst taban şeklinde üstünü alalım(pow(min,max))
+
+// let number1,number2;
+// number1=Number(prompt("1.sayı"));
+// number2=Number(prompt("1.sayı"));
+// console.log(Math.min(number1,number2));
+// console.log(Math.max(number1,number2));
+// console.log(Math.ceil(Math.sqrt(Math.max(number1,number2))));
+// console.log(Math.abs(Math.min(number1,number2)));
+// console.log(Math.pow(Math.min(number1,number2),Math.max(number1,number2)));
 
 // Örnek: Aşağıdaki örnekleri math ile çözelim ?
 // -5.9 sayıyının aşağıdaki işlemleri yaptıralım ?
@@ -143,3 +151,39 @@ console.log(Math.asin(1));
 // NOT: cast kullalım ?
 // Örnek-6 : kullanıcı tarafından password ve repassword alalım sonrasında bu iki değeri karşılaştırma yapalım
 // eğer aynı girilirse aynı veri yoksa birbirine uymadı yazan algoritma yapalım
+
+/////////////////////////////////////////////////// 
+// String 
+let value="JAVAscript öğreniyorum JAVAscript ";
+console.log(value);
+console.log(value.length);
+console.log(value.trim().length);
+console.log(value.toUpperCase());
+console.log(value.toLowerCase());
+console.log(value.indexOf("JAVAscript"));
+console.log(value.lastIndexOf("JAVAscript"));
+console.log(value.charAt(0));
+console.log(value.charAt(value.length-2));
+console.log(value.substring(1));
+console.log(value.substring(0,4)); // 0<=X<=4-1
+console.log(value.concat(" -sona eklendi"));
+console.log(value.replace(value," java"));
+console.log(value.startsWith("J"));
+console.log(value.endsWith(" "));
+
+// Örnek: 
+// ÖDEV NOT:5 adımı beraber yapalım
+// kullanıcı tarafından girilen bir kelimenin (prompt)
+// let userData= prompt("Lütfen bir şeyler yazınız")  ;
+// S-1) Kaç karakterlidir ? (length)
+// S-2) boşluklar alınarak Kaç karakterlidir ? (trim)
+// S-3) bütün kelimeyi küçük harfle göstermek ? (toLowerCase())
+// S-4) bütün kelimeyi büyük harfle göstermek ? (toUpperCase())
+// S-5) Kullanıcıdan alınan ilk kelimeyle , "javascript" kelimeyle değiştirin. (replace, substring, indexOf)
+//console.log(userData.replace("xxxxxxx"),"javascript");
+//console.log(userData.replace(userData.substring(0,userData.indexOf(" ")),"javascript"));
+// S-6) yazdığınız kelimede "javascript ile mi başlıyor" ? (startsWith()) 
+// S-7) yazdığınız kelimede "javascript ile mi bitiyor" ? (endsWith())
+// S-8) ilk harf nedir  ? (charAt())
+// S-9) girdiğiniz kelimenin sonuna "-ben js öğreniyorum" (concat())
+// S-10) girdiğiniz 0 ile 4 arasındaki indexi ekranda gösterin? (subString())
