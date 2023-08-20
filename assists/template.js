@@ -250,61 +250,61 @@
 
 ///////////////////////////////////////////////////////////////////////////
 // Contional()
-(() => {
-    let number = 4;
-    if (number > 0) {
-        console.log("Pozitif sayı");
-    } else {
-        console.log("Negatif sayı");
-    }
-})();
+// (() => {
+//     let number = 4;
+//     if (number > 0) {
+//         console.log("Pozitif sayı");
+//     } else {
+//         console.log("Negatif sayı");
+//     }
+// })();
 
-(() => {
-    let number = 4;
-    let result = (number > 0) ? "Pozitif sayı" : "Negatif sayı";
-    console.log(result);
-})();
+// (() => {
+//     let number = 4;
+//     let result = (number > 0) ? "Pozitif sayı" : "Negatif sayı";
+//     console.log(result);
+// })();
 
-(() => {
-    let number = 4;
-    if (number == 1) {
-        console.log("1");
-    } else if (number === 2) {
-        console.log("2");
-    } else if (number === 3) {
-        console.log("3");
-    } else if (number === 4) {
-        console.log("4");
-    } else if (number === 5) {
-        console.log("5");
-    } else {
-        console.log("1<=sayı<=5 dışındadır");
-    }
-})();
+// (() => {
+//     let number = 4;
+//     if (number == 1) {
+//         console.log("1");
+//     } else if (number === 2) {
+//         console.log("2");
+//     } else if (number === 3) {
+//         console.log("3");
+//     } else if (number === 4) {
+//         console.log("4");
+//     } else if (number === 5) {
+//         console.log("5");
+//     } else {
+//         console.log("1<=sayı<=5 dışındadır");
+//     }
+// })();
 
-(() => {
-    let number = 4;
-    switch (number) {
-        case 1:
-            console.log("1");
-            break;
-        case 2:
-            console.log("2");
-            break;
-        case 3:
-            console.log("3");
-            break;
-        case 4:
-            console.log("4");
-            break;
-        case 5:
-            console.log("5");
-            break;
-        default:
-            console.log("1<=sayı<=5 dışındadır");
-            break;
-    }
-})();
+// (() => {
+//     let number = 4;
+//     switch (number) {
+//         case 1:
+//             console.log("1");
+//             break;
+//         case 2:
+//             console.log("2");
+//             break;
+//         case 3:
+//             console.log("3");
+//             break;
+//         case 4:
+//             console.log("4");
+//             break;
+//         case 5:
+//             console.log("5");
+//             break;
+//         default:
+//             console.log("1<=sayı<=5 dışındadır");
+//             break;
+//     }
+// })();
 
 // ÖDEV:
 // Kullanıcı tarafından girilen bir sayının negatif mi, pozitif mi ? bunu yazan JS code yazınız.
@@ -320,6 +320,44 @@
 
 ///////////////////////////////////////////////////////////////////////////
 // Loop()
+
+(() => {
+    // i++
+    // i=i+1;
+    // i+=1;
+    let sum=0;
+    for (let i = 1; i <= 9; i++) {
+        console.log(i + " ");
+        //console.log(`döngü içinde ${i}`);
+        sum+=i;
+    }
+    console.log("Toplam: "+sum);
+})();
+
+(() => {
+    // i++
+    // i=i+1;
+    // i+=1;
+    let i = 1;
+    while (i <= 9) {
+        console.log(i + " ");
+        //console.log(`döngü içinde ${i}`);
+        i=i+1;
+    }
+})();
+
+(() => {
+    // i++
+    // i=i+1;
+    // i+=1;
+    let i = 1;
+    do{
+       console.log(i + " ");
+        //console.log(`döngü içinde ${i}`);
+        i+=1;
+    } while (i <= 9);
+})();
+
 
 // break, return, continue
 
