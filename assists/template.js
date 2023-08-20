@@ -191,30 +191,90 @@
 /////////////////////////////////////////////////// 
 // Function 
 // 1-) retursuz Parametresiz
-function retursuzParametresiz() {
-    console.log("retursuz Parametresiz");
-}
-retursuzParametresiz();
+// function retursuzParametresiz() {
+//     console.log("retursuz Parametresiz");
+// }
+// retursuzParametresiz();
 
-// 2-) retursuz Parametreli
-function retursuzParametreli(number) {
-    console.log("retursuz Parametreli: " + Math.pow(number, 2));
-}
-retursuzParametreli(9);
+// // 2-) retursuz Parametreli
+// function retursuzParametreli(number) {
+//     console.log("retursuz Parametreli: " + Math.pow(number, 2));
+// }
+// retursuzParametreli(9);
 
-// 3-) returlu Parametresiz
-function returluParametresiz() {
-    return "returlı Parametresiz";
-}
-let data3=returluParametresiz();
-console.log(data3);
+// // 3-) returlu Parametresiz
+// function returluParametresiz() {
+//     return "returlı Parametresiz";
+// }
+// let data3=returluParametresiz();
+// console.log(data3);
 
-// 4-) returlu Parametreli
-function returluParametreli(value) {
-    return "returlı Parametreli "+ value;
-}
-let data4=returluParametreli("asdasd");
-console.log(data4);
+// // 4-) returlu Parametreli
+// function returluParametreli(value) {
+//     return "returlı Parametreli "+ value;
+// }
+// let data4=returluParametreli("asdasd");
+// console.log(data4);
 
 ///////////////////////////////////////////////////////////////////////////
 // Normal function,  Anonymous Function, Arrow Functrion, Immedia Function
+
+// Normal function, 
+function normalFunction(){
+    console.log("Normal Function");
+}
+normalFunction();
+
+
+// Anonymous Function,
+let anonymousFunction= function (){
+    console.log("anonymous Function");
+}
+anonymousFunction();
+
+// Arrow Function,
+let arrowFunction=  ()=>{
+    console.log("arrow  Function");
+}
+arrowFunction();
+
+// Immedia Function ()()
+(function (){
+    console.log("Immedia Function Anonymous");
+})();
+( ()=>{
+    console.log("Immedia Function Arrow");
+})();
+
+
+
+///////////////////////////////////////////////////////////////////////////
+// Contional()
+
+// ÖDEV: 
+// Kullanıcı tarafından girilen bir sayının negatif mi, pozitif mi ? bunu yazan JS code yazınız.
+// (Dikkat: normal  function ile yazınız)
+
+
+// Kullanıcı tarafından girilen bir sayının tek mi, çift mi olduğunu yazan JS code yazınız.
+// (Dikkat:anonymous function ve ternary ile yazınız)
+
+
+// Kullanıcıdan alınan sayıya göre Haftanın günlerini switch-case ile JS code yazınız?
+// Örneğin: kullanıcı 1 girdi: 1=pazartesi yazacak
+
+
+
+
+///////////////////////////////////////////////////////////////////////////
+// Loop()
+
+// break, return, continue
+
+// ÖDEV 
+// kullanıcıdan aldığımız isim soyisim (boşluk var)
+// ilk karakter göstersin sonraki kelimeleri masking (maskeleme yapsın)
+// eğer kullanıcı isim ve soyisimi ilk karakteri küçük girmişse büyük olsun mutlaka
+// Hamit Mızrak
+// H**** MIZ***
+// ipucu: charAt, substring, indexOf, döngü, karar mekanizma
