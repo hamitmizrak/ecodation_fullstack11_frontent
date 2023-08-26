@@ -652,6 +652,10 @@ const isOtherRedirectPage=()=>{
 }
 
 // EventListener
+document.getElementById("h1_id")
+            .addEventListener("click", (event) => {
+                alert("Tıklandı")
+            });
 
 ///////////////////////////////////////////////////////////////////////////
 // jQuery
