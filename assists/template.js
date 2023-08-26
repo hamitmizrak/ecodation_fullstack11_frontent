@@ -603,7 +603,40 @@ const promiseFunctionComputer = () => {
     computerNameList()
 }
 promiseFunctionComputer()
+
+console.log();
+
 // async/await
+// 2-) promise
+const asyncAwaitFunctionComputer = () => {
+    // api'den gelen dizi objesi
+    const computerArrayObject = functionComputerArrayObject();
+
+    // Bilgisayar Adı
+    const computerNameList = () => {
+        computerArrayObject.map((temp) => {
+            console.log(`${temp.computerName}`);
+        });
+    }
+    console.log(computerNameList());
+
+    // objeye promise Objesi üzerindan data ekle
+    const computerObjectAddList = (data) => {
+        const promiseReturnData = new Promise((resolve, reject) => {
+            computerArrayObject.push(data);
+        })
+        return promiseReturnData;
+    }
+
+    async function resultAsynAwait() {
+        const data = await computerObjectAddList({ computerName: "bilgisayar adı 4", price: 4000 })
+        console.log(data);
+    }
+
+    resultAsynAwait();
+    computerNameList();
+}
+asyncAwaitFunctionComputer();
 
 ///////////////////////////////////////////////////////////////////////////
 // Object
