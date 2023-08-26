@@ -574,7 +574,7 @@ const callBackFunctionComputer=()=>{
 }
 callBackFunctionComputer();
 
-// promise
+// 2-) promise
 // async/await
 
 ///////////////////////////////////////////////////////////////////////////
