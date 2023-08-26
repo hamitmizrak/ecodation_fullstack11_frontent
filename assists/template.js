@@ -403,28 +403,49 @@ let arr = () => {
     // let dizi = [50, 20, 10, 60];
     // dizi[4] = 5;
     // dizi[5] = 11;
-    let dizi=arr();
+    let dizi = arr();
     //console.log(dizi[0]);
     //console.log(dizi[4]);
     //console.log(dizi[dizi.length-1]);
 
     //Iterative for
-    for (let i = 0; i < dizi.length; i++) {
-        //console.log(dizi[i]);
-        document.writeln(dizi[i]);
-    }
-    document.write("<br/>");
+    // for (let i = 0; i < dizi.length; i++) {
+    //     //console.log(dizi[i]);
+    //     document.writeln(dizi[i]);
+    // }
+    // document.write("<br/>");
 
     //for IN
-    for (let temp in dizi) {
-        document.writeln(`${temp} => ${dizi[temp]}`);
-    }
+    // for (let temp in dizi) {
+    //     document.writeln(`${temp} => ${dizi[temp]}`);
+    // }
 
-    document.write("<br/>");
+    //document.write("<br/>");
+
+    dizi.push(44);// sondan bir eleman dizide ekle.
+    dizi.unshift(23);// baştan bir eleman dizide ekle.
+
+    dizi.pop(); // sondan bir eleman dizide çıkar.
+    dizi.shift();// baştan bir eleman dizide çıkar.
+
     //for OF
     for (let temp of dizi) {
-        document.writeln(temp);
+        //document.writeln(temp);
     }
+    //dizi.reverse();
+    //dizi.sort(); //küçükten büyüğe doğru
+    dizi.sort().reverse(); //büyükten büyüğe doğru
+
+    document.write("<br/>");
+    // for (let temp of dizi) {
+    //     document.writeln(temp);
+    // }
+
+    //  forEach(callbackfn: (value: T, index: number, array: T[]))
+    dizi.forEach((value,index,array)=>{
+        document.writeln(`${index} => ${value} => ${array}<br/>`);
+    });
+
 })();
 
 ///////////////////////////////////////////////////////////////////////////
