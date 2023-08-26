@@ -434,7 +434,7 @@ let arr = () => {
     }
     //dizi.reverse();
     //dizi.sort(); //küçükten büyüğe doğru
-   // dizi.sort().reverse(); //büyükten büyüğe doğru
+    // dizi.sort().reverse(); //büyükten büyüğe doğru
 
     document.write("<br/>");
     // for (let temp of dizi) {
@@ -448,51 +448,101 @@ let arr = () => {
 })();
 
 // join: dizide ayrıştırma yapmak
-let diziData=()=>{
-let dizi=arr();
-document.writeln(dizi+"<br/>");
-//document.writeln(dizi.sort().join(" - ")+"<br/>");
+let diziData = () => {
+    let dizi = arr();
+    document.writeln(dizi + "<br/>");
+    //document.writeln(dizi.sort().join(" - ")+"<br/>");
 
-//.splice(0,2) 0:indis numarası 2: silme
-//document.writeln(dizi.splice(0,2));
-//document.writeln(dizi.toString().concat(",data").toUpperCase()+"<br/>");
-//document.writeln(((typeof dizi.toString().concat(",data").toUpperCase()))+"<br/>");
+    //.splice(0,2) 0:indis numarası 2: silme
+    //document.writeln(dizi.splice(0,2));
+    //document.writeln(dizi.toString().concat(",data").toUpperCase()+"<br/>");
+    //document.writeln(((typeof dizi.toString().concat(",data").toUpperCase()))+"<br/>");
 
-// Diziler
-// dizi.forEach()
-// dizi.filter()
-// dizi.map()
+    // Diziler
+    // dizi.forEach()
+    // dizi.filter()
+    // dizi.map()
 
-let data= dizi.map((temp)=>{
-return temp*2;
-})
-document.writeln(data+" <br/>");
+    let data = dizi.map((temp) => {
+        return temp * 2;
+    })
+    document.writeln(data + " <br/>");
 
-// .dizi.filter(function(temp){
-//     return temp%2==0
-// }).forEach((value,index,array)=>{
-//     document.writeln(`${index} => ${value} <br/>`);
-// });
+    // .dizi.filter(function(temp){
+    //     return temp%2==0
+    // }).forEach((value,index,array)=>{
+    //     document.writeln(`${index} => ${value} <br/>`);
+    // });
 
-//  filter<S extends T>(predicate: (value: T, index: number, array: T[]) 
-// dizi.filter(function(temp){
-//     return temp%2==0
-// }).forEach((value,index,array)=>{
-//     document.writeln(`${index} => ${value} <br/>`);
-// });
+    //  filter<S extends T>(predicate: (value: T, index: number, array: T[]) 
+    // dizi.filter(function(temp){
+    //     return temp%2==0
+    // }).forEach((value,index,array)=>{
+    //     document.writeln(`${index} => ${value} <br/>`);
+    // });
 }
 diziData();
+
+// Örnek
+// 1.YOL normal diziyle yapalım.
+// 2.YOL map,filter, forEach ile yapalım.
+// rastgele 10 elemanlı bir dizi  oluşturalım.  ==> (random)
+// bu sayılardan tek olanları bulalım.          ==> (filter)
+// bu tek sayıların sonuna 5 ekleyelim          ==> (map)
+// buradaki sayıları ekranda gösterelim. ?      ==> (forEach)
+// bu şarta uyan kaç tane sayı vardır ?         ==> (counter)
+
+///////////////////////////////////////////////////////////////////////////
+// Callbackfnc, promise, asyn-await
+// Monad 
+//setTimeout(function(){});
+// 1 kere çalışıyor.
+// setTimeout(function(){
+//     let counter=0;
+//     document.writeln(counter);
+//     console.log("setTimeout: "+counter);
+//     counter++;
+// },2000);
+
+// sürekli çalışıyor.
+// setInterval(function(){
+//     let counter=0;
+//     document.writeln(counter);
+//     counter++;
+//     console.log("setInterval: "+counter);
+// },2000);
+
+// Monad
+const birinci = (number) => {
+    console.log(Math.sqrt(number));
+}
+
+const ikinci = () => {
+    let number = 16;
+    birinci(number);
+}
+ikinci();
+
+// Call Back Function
+const ucuncu = (number) => {
+    console.log(Math.sqrt(number));
+}
+
+const dorduncu = (callbackFnc) => {
+    let number = 16;
+    callbackFnc(number);
+}
+dorduncu(ucuncu);
+
+
+// promise
+// async/await
 
 ///////////////////////////////////////////////////////////////////////////
 // Object
 // DOM
 // Event
 // EventListener
-
-
-///////////////////////////////////////////////////////////////////////////
-// Callbackfnc, promise, asyn-await
-
 
 ///////////////////////////////////////////////////////////////////////////
 // jQuery
