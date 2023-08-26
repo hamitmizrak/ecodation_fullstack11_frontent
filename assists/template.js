@@ -1,5 +1,5 @@
-(()=>{
-    
+(() => {
+
 })();
 
 // Kod açaıklamalarını(single comment)
@@ -374,20 +374,58 @@
 ///////////////////////////////////////////////////////////////////////////
 
 // try-catch
-(()=>{
-try {
-   alertx("pop-pup verisi");
-} catch (err) {
-    console.info(err.message);
-    console.info(err.name);
-    console.error(err);
-} finally{
-    console.warn("burası çalışması gerekiyor.");
+// (()=>{
+// try {
+//    alertx("pop-pup verisi");
+// } catch (err) {
+//     console.info(err.message);
+//     console.info(err.name);
+//     console.error(err);
+// } finally{
+//     console.warn("burası çalışması gerekiyor.");
+// }
+// console.log("son satır");
+// throw "Burada kendi istediğim üzerine hata meydana gelsin";
+// })();
+
+///////////////////////////////////////////////////////////////////////////
+let arr = () => {
+    let dizi = [];
+    for (let i = 0; i < 5; i++) {
+        let random = Math.floor(Math.random() * 9 + 1);
+        dizi[i] = random;
+    }
+    return dizi;
 }
-console.log("son satır");
-throw "Burada kendi istediğim üzerine hata meydana gelsin";
-})();
+
 // Array
+(() => {
+    // let dizi = [50, 20, 10, 60];
+    // dizi[4] = 5;
+    // dizi[5] = 11;
+    let dizi=arr();
+    //console.log(dizi[0]);
+    //console.log(dizi[4]);
+    //console.log(dizi[dizi.length-1]);
+
+    //Iterative for
+    for (let i = 0; i < dizi.length; i++) {
+        //console.log(dizi[i]);
+        document.writeln(dizi[i]);
+    }
+    document.write("<br/>");
+
+    //for IN
+    for (let temp in dizi) {
+        document.writeln(`${temp} => ${dizi[temp]}`);
+    }
+
+    document.write("<br/>");
+    //for OF
+    for (let temp of dizi) {
+        document.writeln(temp);
+    }
+})();
 
 ///////////////////////////////////////////////////////////////////////////
 // Object
@@ -404,7 +442,7 @@ throw "Burada kendi istediğim üzerine hata meydana gelsin";
 // jQuery
 
 ///////////////////////////////////////////////////////////////////////////
-// Linux - Git 
+// Linux - Git
 
 ///////////////////////////////////////////////////////////////////////////
 // Sıfırdan Template Frontend
