@@ -422,11 +422,11 @@ let arr = () => {
 
     //document.write("<br/>");
 
-    dizi.push(44);// sondan bir eleman dizide ekle.
-    dizi.unshift(23);// baştan bir eleman dizide ekle.
+    //dizi.push(44);// sondan bir eleman dizide ekle.
+    //dizi.unshift(23);// baştan bir eleman dizide ekle.
 
-    dizi.pop(); // sondan bir eleman dizide çıkar.
-    dizi.shift();// baştan bir eleman dizide çıkar.
+    //dizi.pop(); // sondan bir eleman dizide çıkar.
+    //dizi.shift();// baştan bir eleman dizide çıkar.
 
     //for OF
     for (let temp of dizi) {
@@ -434,7 +434,7 @@ let arr = () => {
     }
     //dizi.reverse();
     //dizi.sort(); //küçükten büyüğe doğru
-    dizi.sort().reverse(); //büyükten büyüğe doğru
+   // dizi.sort().reverse(); //büyükten büyüğe doğru
 
     document.write("<br/>");
     // for (let temp of dizi) {
@@ -442,11 +442,23 @@ let arr = () => {
     // }
 
     //  forEach(callbackfn: (value: T, index: number, array: T[]))
-    dizi.forEach((value,index,array)=>{
-        document.writeln(`${index} => ${value} => ${array}<br/>`);
-    });
-
+    // dizi.forEach((value,index,array)=>{
+    //     document.writeln(`${index} => ${value} => ${array}<br/>`);
+    // });
 })();
+
+// join: dizide ayrıştırma yapmak
+let diziData=()=>{
+let dizi=arr();
+document.writeln(dizi+"<br/>");
+//document.writeln(dizi.sort().join(" - ")+"<br/>");
+
+//.splice(0,2) 0:indis numarası 2: silme
+document.writeln(dizi.splice(0,2));
+//document.writeln(dizi.toString().concat(",data").toUpperCase()+"<br/>");
+//document.writeln(((typeof dizi.toString().concat(",data").toUpperCase()))+"<br/>");
+}
+diziData();
 
 ///////////////////////////////////////////////////////////////////////////
 // Object
