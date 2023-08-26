@@ -1,3 +1,7 @@
+(()=>{
+    
+})();
+
 // Kod açaıklamalarını(single comment)
 /* Çoklu açıklamalar ()Multiple comment*/
 
@@ -321,42 +325,42 @@
 ///////////////////////////////////////////////////////////////////////////
 // Loop()
 
-(() => {
-    // i++
-    // i=i+1;
-    // i+=1;
-    let sum=0;
-    for (let i = 1; i <= 9; i++) {
-        console.log(i + " ");
-        //console.log(`döngü içinde ${i}`);
-        sum+=i;
-    }
-    console.log("Toplam: "+sum);
-})();
+// (() => {
+//     // i++
+//     // i=i+1;
+//     // i+=1;
+//     let sum=0;
+//     for (let i = 1; i <= 9; i++) {
+//         console.log(i + " ");
+//         //console.log(`döngü içinde ${i}`);
+//         sum+=i;
+//     }
+//     console.log("Toplam: "+sum);
+// })();
 
-(() => {
-    // i++
-    // i=i+1;
-    // i+=1;
-    let i = 1;
-    while (i <= 9) {
-        console.log(i + " ");
-        //console.log(`döngü içinde ${i}`);
-        i=i+1;
-    }
-})();
+// (() => {
+//     // i++
+//     // i=i+1;
+//     // i+=1;
+//     let i = 1;
+//     while (i <= 9) {
+//         console.log(i + " ");
+//         //console.log(`döngü içinde ${i}`);
+//         i=i+1;
+//     }
+// })();
 
-(() => {
-    // i++
-    // i=i+1;
-    // i+=1;
-    let i = 1;
-    do{
-       console.log(i + " ");
-        //console.log(`döngü içinde ${i}`);
-        i+=1;
-    } while (i <= 9);
-})();
+// (() => {
+//     // i++
+//     // i=i+1;
+//     // i+=1;
+//     let i = 1;
+//     do{
+//        console.log(i + " ");
+//         //console.log(`döngü içinde ${i}`);
+//         i+=1;
+//     } while (i <= 9);
+// })();
 
 // break, return, continue
 // ÖDEV
@@ -370,6 +374,19 @@
 ///////////////////////////////////////////////////////////////////////////
 
 // try-catch
+(()=>{
+try {
+   alertx("pop-pup verisi");
+} catch (err) {
+    console.info(err.message);
+    console.info(err.name);
+    console.error(err);
+} finally{
+    console.warn("burası çalışması gerekiyor.");
+}
+console.log("son satır");
+throw "Burada kendi istediğim üzerine hata meydana gelsin";
+})();
 // Array
 
 ///////////////////////////////////////////////////////////////////////////
