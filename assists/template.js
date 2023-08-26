@@ -642,6 +642,15 @@ asyncAwaitFunctionComputer();
 // Object
 // DOM
 // Event
+
+const deneme1=()=>{
+    alert("deneme")
+}
+
+const isOtherRedirectPage=()=>{
+    let result=window.confirm("google gitmek istiyor musunuz ") ? window.location="https://www.google.com":window.alert("Sayfada kalındı");
+}
+
 // EventListener
 
 ///////////////////////////////////////////////////////////////////////////

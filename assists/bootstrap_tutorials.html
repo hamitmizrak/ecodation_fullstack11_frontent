@@ -15,6 +15,28 @@
 <body>
 
     <noscript>Bu browser javascript'i desteklemiyor.</noscript>
+    
+    <button class="btn btn-primary" onclick="deneme1()">onclick</button>
+    <button class="btn btn-primary" ondblclick="deneme1()">ondblclick</button>
+<br>
+    <button class="btn btn-primary" onmousewheel="deneme1()">onmousewheel</button>
+    <button class="btn btn-primary" onmousedown="deneme1()">onmousedown</button>
+    <button class="btn btn-primary" onmouseup="deneme1()">onmouseup</button>
+<br>
+    <button class="btn btn-danger" onkeydown="deneme1()">onkeydown</button>
+    <button class="btn btn-danger" onkeyup="deneme1()">onkeyup</button>
+
+    <hr>
+    <button class="btn btn-primary" onclick="isOtherRedirectPage()">isOtherRedirectPage</button>
+<hr>
+<h1 id="h1_id" class="display-3">Add Event Listener Examples</h1>
+<script>
+    document.getElementById("h1_id")
+    .addEventListener("click",(event)=>{
+        alert("Tıklandı")
+    });
+</script>
+
     <!-- <script>
         alert("Pop-pup-1");
         alert("Pop-pup-2")
