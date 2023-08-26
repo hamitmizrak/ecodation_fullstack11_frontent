@@ -454,9 +454,32 @@ document.writeln(dizi+"<br/>");
 //document.writeln(dizi.sort().join(" - ")+"<br/>");
 
 //.splice(0,2) 0:indis numarası 2: silme
-document.writeln(dizi.splice(0,2));
+//document.writeln(dizi.splice(0,2));
 //document.writeln(dizi.toString().concat(",data").toUpperCase()+"<br/>");
 //document.writeln(((typeof dizi.toString().concat(",data").toUpperCase()))+"<br/>");
+
+// Diziler
+// dizi.forEach()
+// dizi.filter()
+// dizi.map()
+
+let data= dizi.map((temp)=>{
+return temp*2;
+})
+document.writeln(data+" <br/>");
+
+// .dizi.filter(function(temp){
+//     return temp%2==0
+// }).forEach((value,index,array)=>{
+//     document.writeln(`${index} => ${value} <br/>`);
+// });
+
+//  filter<S extends T>(predicate: (value: T, index: number, array: T[]) 
+// dizi.filter(function(temp){
+//     return temp%2==0
+// }).forEach((value,index,array)=>{
+//     document.writeln(`${index} => ${value} <br/>`);
+// });
 }
 diziData();
 
