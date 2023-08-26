@@ -538,43 +538,71 @@ const dorduncu = (callbackFnc) => {
 ////////////////////////////////////////////////
 
 // Dizi Objesi (Api)
-const functionComputerArrayObject=()=>{
-       // api'den gelen dizi objesi
-       const computerArrayObject=[
-        {computerName:"bilgisayar adı 1",price:1000},
-        {computerName:"bilgisayar adı 2",price:2000},
-        {computerName:"bilgisayar adı 3",price:3000},
+const functionComputerArrayObject = () => {
+    // api'den gelen dizi objesi
+    const computerArrayObject = [
+        { computerName: "bilgisayar adı 1", price: 1000 },
+        { computerName: "bilgisayar adı 2", price: 2000 },
+        { computerName: "bilgisayar adı 3", price: 3000 },
     ];
     console.log(computerArrayObject);
     return computerArrayObject;
 }
 
 // 1-) Call Back Function
-const callBackFunctionComputer=()=>{
+const callBackFunctionComputer = () => {
     // api'den gelen dizi objesi
-    const computerArrayObject=functionComputerArrayObject();
-    console.log(computerArrayObject);
+    const computerArrayObject = functionComputerArrayObject();
+    //console.log(computerArrayObject);
 
     // Bilgisayar Adı
-    const computerNameList=()=>{
-        computerArrayObject.map((temp)=>{
+    const computerNameList = () => {
+        computerArrayObject.map((temp) => {
             console.log(`${temp.computerName}`);
-        });  
+        });
     }
     console.log(computerNameList());
 
     // objeye call back ekle
-    const computerObjectAddList=(data,callBackFunction)=>{
+    const computerObjectAddList = (data, callBackFunction) => {
         computerArrayObject.push(data);
         callBackFunction();
     }
 
     // objeye yeni bir data ekleyerek callbackfunction örneğini yapmış olduk
-    computerObjectAddList({computerName:"bilgisayar adı 4",price:4000},computerNameList)
+    computerObjectAddList({ computerName: "bilgisayar adı 4", price: 4000 }, computerNameList)
 }
 callBackFunctionComputer();
 
+console.log("");
+
 // 2-) promise
+const promiseFunctionComputer = () => {
+    // api'den gelen dizi objesi
+    const computerArrayObject = functionComputerArrayObject();
+
+    // Bilgisayar Adı
+    const computerNameList = () => {
+        computerArrayObject.map((temp) => {
+            console.log(`${temp.computerName}`);
+        });
+    }
+    console.log(computerNameList());
+
+    // objeye promise Objesi üzerindan data ekle
+    const computerObjectAddList = (data) => {
+        const promiseReturnData = new Promise((resolve, reject) => {
+            computerArrayObject.push(data);
+        })
+        return promiseReturnData;
+    }
+
+    computerObjectAddList({ computerName: "bilgisayar adı 4", price: 4000 })
+        .then(() => { console.log("olumlu"); })
+        .catch((err) => { console.error(err); })
+    computerNameList()
+}
+promiseFunctionComputer()
 // async/await
 
 ///////////////////////////////////////////////////////////////////////////
