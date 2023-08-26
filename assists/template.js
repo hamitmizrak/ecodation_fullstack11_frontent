@@ -466,7 +466,7 @@ let diziData = () => {
     let data = dizi.map((temp) => {
         return temp * 2;
     })
-    document.writeln(data + " <br/>");
+    //document.writeln(data + " <br/>");
 
     // .dizi.filter(function(temp){
     //     return temp%2==0
@@ -481,7 +481,7 @@ let diziData = () => {
     //     document.writeln(`${index} => ${value} <br/>`);
     // });
 }
-diziData();
+//diziData();
 
 // Örnek
 // 1.YOL normal diziyle yapalım.
@@ -521,7 +521,7 @@ const ikinci = () => {
     let number = 16;
     birinci(number);
 }
-ikinci();
+// ikinci();
 
 // Call Back Function
 const ucuncu = (number) => {
@@ -532,8 +532,47 @@ const dorduncu = (callbackFnc) => {
     let number = 16;
     callbackFnc(number);
 }
-dorduncu(ucuncu);
+// dorduncu(ucuncu);
 
+
+////////////////////////////////////////////////
+
+// Dizi Objesi (Api)
+const functionComputerArrayObject=()=>{
+       // api'den gelen dizi objesi
+       const computerArrayObject=[
+        {computerName:"bilgisayar adı 1",price:1000},
+        {computerName:"bilgisayar adı 2",price:2000},
+        {computerName:"bilgisayar adı 3",price:3000},
+    ];
+    console.log(computerArrayObject);
+    return computerArrayObject;
+}
+
+// 1-) Call Back Function
+const callBackFunctionComputer=()=>{
+    // api'den gelen dizi objesi
+    const computerArrayObject=functionComputerArrayObject();
+    console.log(computerArrayObject);
+
+    // Bilgisayar Adı
+    const computerNameList=()=>{
+        computerArrayObject.map((temp)=>{
+            console.log(`${temp.computerName}`);
+        });  
+    }
+    console.log(computerNameList());
+
+    // objeye call back ekle
+    const computerObjectAddList=(data,callBackFunction)=>{
+        computerArrayObject.push(data);
+        callBackFunction();
+    }
+
+    // objeye yeni bir data ekleyerek callbackfunction örneğini yapmış olduk
+    computerObjectAddList({computerName:"bilgisayar adı 4",price:4000},computerNameList)
+}
+callBackFunctionComputer();
 
 // promise
 // async/await
