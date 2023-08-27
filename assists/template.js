@@ -644,30 +644,44 @@ const obje = () => {
     let person = {
         "name": "Hamit",
         "surname": "Mızrak",
-        "number":44,
-        "fullName":function(){
-            console.log("fonksiyon "+this.name+" "+this.surname);
+        "number": 44,
+        "fullName": function () {
+            console.log("fonksiyon " + this.name + " " + this.surname);
         },
-        "javase":["variable","optional","stream"],
-        "java":{
-            "version":"1.8",
-            "date":"2017-09-20",
+        "javase": ["variable", "optional", "stream"],
+        "java": {
+            "version": "1.8",
+            "date": "2017-09-20",
         }
     };
     console.log(person);
     console.log(person.name);
     console.log(person["name"]);
     console.log(person.name.toUpperCase());
-    console.log( typeof person.name.toUpperCase());
+    console.log(typeof person.name.toUpperCase());
     console.log(`${person.name} ${person.surname}`);
     person.fullName();
-    person.isLogin=true;
+    person.isLogin = true;
     console.log(person.isLogin);
     console.log(person["isLogin"]);
     console.log(person.javase[0]);
     console.log(person.java.version);
 }
-obje()
+//obje();
+
+const obje2 = () => {
+    let Person = function (adi, soyadi) {
+        this.adi = adi;
+        this.soyadi = soyadi;
+        console.log(this);
+    }
+    //console.log(Person);
+    //console.log(Person());
+    let data=new Person("Hamit","Mızrak");
+    //console.log(data);
+    console.log(data.adi);
+}
+obje2();
 
 ///////////////////////////////////////////////////////////////////////////
 
