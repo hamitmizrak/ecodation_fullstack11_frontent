@@ -15,7 +15,23 @@
 <body>
 
     <noscript>Bu browser javascript'i desteklemiyor.</noscript>
+    <p id="paragId">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, ab!</p>
+    <button class="btn btn-primary" onclick="dom()">click me !</button>
+    <script>
+        const dom = () => {
+            //alert("Tıklandı")
+            //document.getElementById("paragId").innerHTML="değişti";
+            //document.querySelector("#paragId").innerHTML = "değişti";
+            //document.querySelector("#paragId").innerHTML = "<b>değişti</b>";
+            document.querySelector("#paragId").innerText = "<b>değişti</b>";
+            document.querySelector("#paragId").style.color = "blue";
+            document.querySelector("#paragId").style.backgroundColor = "black";
+            document.querySelector("#paragId").style.padding = "3rem";
+            document.querySelector("#paragId").style.marginTop = "1rem";
+        }
+    </script>
 
+    <hr>
     <button class="btn btn-primary" onclick="deneme1()">onclick</button>
     <button class="btn btn-primary" ondblclick="deneme1()">ondblclick</button>
     <br>

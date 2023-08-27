@@ -683,7 +683,6 @@ const obje2 = () => {
 }
 //obje2();
 
-
 const obje3 = () => {
     let data={
         "adi":"Adim44",
@@ -697,7 +696,7 @@ const obje3 = () => {
     const parseData=JSON.parse(value);
     console.log(parseData);
 }
-obje3();
+//obje3();
 
 /*
 ÖDEV:
@@ -707,6 +706,7 @@ obje3();
 4.adım: adınızı ve soyasınız document.write ile ekranda gösterelim.
 ip uçu: JSON.stringfy  ve substring()
 */
+
 
 ///////////////////////////////////////////////////////////////////////////
 
