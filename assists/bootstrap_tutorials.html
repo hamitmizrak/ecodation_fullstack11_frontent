@@ -15,21 +15,40 @@
 <body>
 
     <noscript>Bu browser javascript'i desteklemiyor.</noscript>
+    
+    <br><br><br><br>
+    
+    <div class="container">
+        <h1 class="display-4">Register</h1>
+    <form action="#" method="get">
+        <div class="form-group">
+             <input 
+             type="text" 
+             id="name_id"
+             class="form-control mb-2" 
+             placeholder="Adınızı giriniz"
+             required
+             title="Adınızı giriniz."
+              />
+        </div>
+        <div class="form-group">
+            <input 
+            type="text" 
+            id="surname_id"
+            class="form-control mb-2" 
+            placeholder="Soyadınızı giriniz"
+            required
+            title="Soyadınız giriniz."
+             />
+       </div>
+       <button class="btn btn-danger">Temizle</button>
+       <button class="btn btn-primary">Gönder</button>
+    </form>
+</div>
+    
+    <hr>
     <p id="paragId">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, ab!</p>
     <button class="btn btn-primary" onclick="dom()">click me !</button>
-    <script>
-        const dom = () => {
-            //alert("Tıklandı")
-            //document.getElementById("paragId").innerHTML="değişti";
-            //document.querySelector("#paragId").innerHTML = "değişti";
-            //document.querySelector("#paragId").innerHTML = "<b>değişti</b>";
-            document.querySelector("#paragId").innerText = "<b>değişti</b>";
-            document.querySelector("#paragId").style.color = "blue";
-            document.querySelector("#paragId").style.backgroundColor = "black";
-            document.querySelector("#paragId").style.padding = "3rem";
-            document.querySelector("#paragId").style.marginTop = "1rem";
-        }
-    </script>
 
     <hr>
     <button class="btn btn-primary" onclick="deneme1()">onclick</button>

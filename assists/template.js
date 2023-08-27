@@ -711,9 +711,17 @@ ip uçu: JSON.stringfy  ve substring()
 ///////////////////////////////////////////////////////////////////////////
 
 // DOM
-
-///////////////////////////////////////////////////////////////////////////
-// jQuery
+const dom = () => {
+    //alert("Tıklandı")
+    //document.getElementById("paragId").innerHTML="değişti";
+    //document.querySelector("#paragId").innerHTML = "değişti";
+    //document.querySelector("#paragId").innerHTML = "<b>değişti</b>";
+    document.querySelector("#paragId").innerText = "<b>değişti</b>";
+    document.querySelector("#paragId").style.color = "blue";
+    document.querySelector("#paragId").style.backgroundColor = "black";
+    document.querySelector("#paragId").style.padding = "3rem";
+    document.querySelector("#paragId").style.marginTop = "1rem";
+}
 
 ///////////////////////////////////////////////////////////////////////////
 // Event
@@ -730,6 +738,9 @@ document.getElementById("h1_id")
     .addEventListener("click", (event) => {
         alert("Tıklandı")
     });
+///////////////////////////////////////////////////////////////////////////
+// LocalStorage
+
 
 ///////////////////////////////////////////////////////////////////////////
 // jQuery
