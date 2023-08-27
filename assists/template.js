@@ -572,7 +572,7 @@ const callBackFunctionComputer = () => {
     // objeye yeni bir data ekleyerek callbackfunction örneğini yapmış olduk
     computerObjectAddList({ computerName: "bilgisayar adı 4", price: 4000 }, computerNameList)
 }
-callBackFunctionComputer();
+//callBackFunctionComputer();
 
 console.log("");
 
@@ -602,7 +602,7 @@ const promiseFunctionComputer = () => {
         .catch((err) => { console.error(err); })
     computerNameList()
 }
-promiseFunctionComputer()
+//promiseFunctionComputer()
 
 console.log();
 
@@ -636,10 +636,38 @@ const asyncAwaitFunctionComputer = () => {
     resultAsynAwait();
     computerNameList();
 }
-asyncAwaitFunctionComputer();
+//asyncAwaitFunctionComputer();
 
 ///////////////////////////////////////////////////////////////////////////
 // Object
+const obje = () => {
+    let person = {
+        "name": "Hamit",
+        "surname": "Mızrak",
+        "number":44,
+        "fullName":function(){
+            console.log("fonksiyon "+this.name+" "+this.surname);
+        },
+        "javase":["variable","optional","stream"],
+        "java":{
+            "version":"1.8",
+            "date":"2017-09-20",
+        }
+    };
+    console.log(person);
+    console.log(person.name);
+    console.log(person["name"]);
+    console.log(person.name.toUpperCase());
+    console.log( typeof person.name.toUpperCase());
+    console.log(`${person.name} ${person.surname}`);
+    person.fullName();
+    person.isLogin=true;
+    console.log(person.isLogin);
+    console.log(person["isLogin"]);
+    console.log(person.javase[0]);
+    console.log(person.java.version);
+}
+obje()
 
 ///////////////////////////////////////////////////////////////////////////
 
@@ -650,19 +678,19 @@ asyncAwaitFunctionComputer();
 
 ///////////////////////////////////////////////////////////////////////////
 // Event
-const deneme1=()=>{
+const deneme1 = () => {
     alert("deneme")
 }
 
-const isOtherRedirectPage=()=>{
-    let result=window.confirm("google gitmek istiyor musunuz ") ? window.location="https://www.google.com":window.alert("Sayfada kalındı");
+const isOtherRedirectPage = () => {
+    let result = window.confirm("google gitmek istiyor musunuz ") ? window.location = "https://www.google.com" : window.alert("Sayfada kalındı");
 }
 
 // EventListener
 document.getElementById("h1_id")
-            .addEventListener("click", (event) => {
-                alert("Tıklandı")
-            });
+    .addEventListener("click", (event) => {
+        alert("Tıklandı")
+    });
 
 ///////////////////////////////////////////////////////////////////////////
 // jQuery
