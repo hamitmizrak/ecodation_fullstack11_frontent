@@ -681,7 +681,32 @@ const obje2 = () => {
     //console.log(data);
     console.log(data.adi);
 }
-obje2();
+//obje2();
+
+
+const obje3 = () => {
+    let data={
+        "adi":"Adim44",
+        "soyadi":"Soyadi44"
+    };
+    console.log(data);
+
+    const value=JSON.stringify(data).toUpperCase();
+    console.log(value);
+
+    const parseData=JSON.parse(value);
+    console.log(parseData);
+}
+obje3();
+
+/*
+ÖDEV:
+1.adım: adınızı ve soyadınızı json objesine ekleyip
+2.adım: bu json objesini String'e çevirip
+3.adım: bu json objesini String'e çevirilmiş kısımdan substring fonksiyon metodu ile isim ve soyismini ayrıştır
+4.adım: adınızı ve soyasınız document.write ile ekranda gösterelim.
+ip uçu: JSON.stringfy  ve substring()
+*/
 
 ///////////////////////////////////////////////////////////////////////////
 
