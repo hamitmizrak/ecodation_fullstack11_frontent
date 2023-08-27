@@ -748,7 +748,9 @@ const loginButton=(e)=>{
 
     let username,surname;
     username=document.getElementById("name_id").value;
-    surname=document.getElementById("surname_id").value;
+    //surname=document.getElementById("surname_id").value;
+
+    surname=$('#surname_id').val();
     //console.log(`${username} - ${surname}`);
 
     // localStorage
