@@ -389,358 +389,381 @@
 // })();
 
 ///////////////////////////////////////////////////////////////////////////
-let arr = () => {
-    let dizi = [];
-    for (let i = 0; i < 5; i++) {
-        let random = Math.floor(Math.random() * 9 + 1);
-        dizi[i] = random;
-    }
-    return dizi;
-}
+// let arr = () => {
+//     let dizi = [];
+//     for (let i = 0; i < 5; i++) {
+//         let random = Math.floor(Math.random() * 9 + 1);
+//         dizi[i] = random;
+//     }
+//     return dizi;
+// }
 
-// Array
-(() => {
-    // let dizi = [50, 20, 10, 60];
-    // dizi[4] = 5;
-    // dizi[5] = 11;
-    let dizi = arr();
-    //console.log(dizi[0]);
-    //console.log(dizi[4]);
-    //console.log(dizi[dizi.length-1]);
+// // Array
+// (() => {
+//     // let dizi = [50, 20, 10, 60];
+//     // dizi[4] = 5;
+//     // dizi[5] = 11;
+//     let dizi = arr();
+//     //console.log(dizi[0]);
+//     //console.log(dizi[4]);
+//     //console.log(dizi[dizi.length-1]);
 
-    //Iterative for
-    // for (let i = 0; i < dizi.length; i++) {
-    //     //console.log(dizi[i]);
-    //     document.writeln(dizi[i]);
-    // }
-    // document.write("<br/>");
+//     //Iterative for
+//     // for (let i = 0; i < dizi.length; i++) {
+//     //     //console.log(dizi[i]);
+//     //     document.writeln(dizi[i]);
+//     // }
+//     // document.write("<br/>");
 
-    //for IN
-    // for (let temp in dizi) {
-    //     document.writeln(`${temp} => ${dizi[temp]}`);
-    // }
+//     //for IN
+//     // for (let temp in dizi) {
+//     //     document.writeln(`${temp} => ${dizi[temp]}`);
+//     // }
 
-    //document.write("<br/>");
+//     //document.write("<br/>");
 
-    //dizi.push(44);// sondan bir eleman dizide ekle.
-    //dizi.unshift(23);// baştan bir eleman dizide ekle.
+//     //dizi.push(44);// sondan bir eleman dizide ekle.
+//     //dizi.unshift(23);// baştan bir eleman dizide ekle.
 
-    //dizi.pop(); // sondan bir eleman dizide çıkar.
-    //dizi.shift();// baştan bir eleman dizide çıkar.
+//     //dizi.pop(); // sondan bir eleman dizide çıkar.
+//     //dizi.shift();// baştan bir eleman dizide çıkar.
 
-    //for OF
-    for (let temp of dizi) {
-        //document.writeln(temp);
-    }
-    //dizi.reverse();
-    //dizi.sort(); //küçükten büyüğe doğru
-    // dizi.sort().reverse(); //büyükten büyüğe doğru
+//     //for OF
+//     for (let temp of dizi) {
+//         //document.writeln(temp);
+//     }
+//     //dizi.reverse();
+//     //dizi.sort(); //küçükten büyüğe doğru
+//     // dizi.sort().reverse(); //büyükten büyüğe doğru
 
-    document.write("<br/>");
-    // for (let temp of dizi) {
-    //     document.writeln(temp);
-    // }
+//     document.write("<br/>");
+//     // for (let temp of dizi) {
+//     //     document.writeln(temp);
+//     // }
 
-    //  forEach(callbackfn: (value: T, index: number, array: T[]))
-    // dizi.forEach((value,index,array)=>{
-    //     document.writeln(`${index} => ${value} => ${array}<br/>`);
-    // });
-})();
+//     //  forEach(callbackfn: (value: T, index: number, array: T[]))
+//     // dizi.forEach((value,index,array)=>{
+//     //     document.writeln(`${index} => ${value} => ${array}<br/>`);
+//     // });
+// })();
 
-// join: dizide ayrıştırma yapmak
-let diziData = () => {
-    let dizi = arr();
-    document.writeln(dizi + "<br/>");
-    //document.writeln(dizi.sort().join(" - ")+"<br/>");
+// // join: dizide ayrıştırma yapmak
+// let diziData = () => {
+//     let dizi = arr();
+//     document.writeln(dizi + "<br/>");
+//     //document.writeln(dizi.sort().join(" - ")+"<br/>");
 
-    //.splice(0,2) 0:indis numarası 2: silme
-    //document.writeln(dizi.splice(0,2));
-    //document.writeln(dizi.toString().concat(",data").toUpperCase()+"<br/>");
-    //document.writeln(((typeof dizi.toString().concat(",data").toUpperCase()))+"<br/>");
+//     //.splice(0,2) 0:indis numarası 2: silme
+//     //document.writeln(dizi.splice(0,2));
+//     //document.writeln(dizi.toString().concat(",data").toUpperCase()+"<br/>");
+//     //document.writeln(((typeof dizi.toString().concat(",data").toUpperCase()))+"<br/>");
 
-    // Diziler
-    // dizi.forEach()
-    // dizi.filter()
-    // dizi.map()
+//     // Diziler
+//     // dizi.forEach()
+//     // dizi.filter()
+//     // dizi.map()
 
-    let data = dizi.map((temp) => {
-        return temp * 2;
-    })
-    //document.writeln(data + " <br/>");
+//     let data = dizi.map((temp) => {
+//         return temp * 2;
+//     })
+//     //document.writeln(data + " <br/>");
 
-    // .dizi.filter(function(temp){
-    //     return temp%2==0
-    // }).forEach((value,index,array)=>{
-    //     document.writeln(`${index} => ${value} <br/>`);
-    // });
+//     // .dizi.filter(function(temp){
+//     //     return temp%2==0
+//     // }).forEach((value,index,array)=>{
+//     //     document.writeln(`${index} => ${value} <br/>`);
+//     // });
 
-    //  filter<S extends T>(predicate: (value: T, index: number, array: T[]) 
-    // dizi.filter(function(temp){
-    //     return temp%2==0
-    // }).forEach((value,index,array)=>{
-    //     document.writeln(`${index} => ${value} <br/>`);
-    // });
-}
-//diziData();
+//     //  filter<S extends T>(predicate: (value: T, index: number, array: T[]) 
+//     // dizi.filter(function(temp){
+//     //     return temp%2==0
+//     // }).forEach((value,index,array)=>{
+//     //     document.writeln(`${index} => ${value} <br/>`);
+//     // });
+// }
+// //diziData();
 
-// Örnek
-// 1.YOL normal diziyle yapalım.
-// 2.YOL map,filter, forEach ile yapalım.
-// rastgele 10 elemanlı bir dizi  oluşturalım.  ==> (random)
-// bu sayılardan tek olanları bulalım.          ==> (filter)
-// bu tek sayıların sonuna 5 ekleyelim          ==> (map)
-// buradaki sayıları ekranda gösterelim. ?      ==> (forEach)
-// bu şarta uyan kaç tane sayı vardır ?         ==> (counter)
+// // Örnek
+// // 1.YOL normal diziyle yapalım.
+// // 2.YOL map,filter, forEach ile yapalım.
+// // rastgele 10 elemanlı bir dizi  oluşturalım.  ==> (random)
+// // bu sayılardan tek olanları bulalım.          ==> (filter)
+// // bu tek sayıların sonuna 5 ekleyelim          ==> (map)
+// // buradaki sayıları ekranda gösterelim. ?      ==> (forEach)
+// // bu şarta uyan kaç tane sayı vardır ?         ==> (counter)
 
-///////////////////////////////////////////////////////////////////////////
-// Callbackfnc, promise, asyn-await
-// Monad 
-//setTimeout(function(){});
-// 1 kere çalışıyor.
-// setTimeout(function(){
-//     let counter=0;
-//     document.writeln(counter);
-//     console.log("setTimeout: "+counter);
-//     counter++;
-// },2000);
+// ///////////////////////////////////////////////////////////////////////////
+// // Callbackfnc, promise, asyn-await
+// // Monad 
+// //setTimeout(function(){});
+// // 1 kere çalışıyor.
+// // setTimeout(function(){
+// //     let counter=0;
+// //     document.writeln(counter);
+// //     console.log("setTimeout: "+counter);
+// //     counter++;
+// // },2000);
 
-// sürekli çalışıyor.
-// setInterval(function(){
-//     let counter=0;
-//     document.writeln(counter);
-//     counter++;
-//     console.log("setInterval: "+counter);
-// },2000);
+// // sürekli çalışıyor.
+// // setInterval(function(){
+// //     let counter=0;
+// //     document.writeln(counter);
+// //     counter++;
+// //     console.log("setInterval: "+counter);
+// // },2000);
 
-// Monad
-const birinci = (number) => {
-    console.log(Math.sqrt(number));
-}
+// // Monad
+// const birinci = (number) => {
+//     console.log(Math.sqrt(number));
+// }
 
-const ikinci = () => {
-    let number = 16;
-    birinci(number);
-}
-// ikinci();
+// const ikinci = () => {
+//     let number = 16;
+//     birinci(number);
+// }
+// // ikinci();
 
-// Call Back Function
-const ucuncu = (number) => {
-    console.log(Math.sqrt(number));
-}
+// // Call Back Function
+// const ucuncu = (number) => {
+//     console.log(Math.sqrt(number));
+// }
 
-const dorduncu = (callbackFnc) => {
-    let number = 16;
-    callbackFnc(number);
-}
-// dorduncu(ucuncu);
-
-
-////////////////////////////////////////////////
-
-// Dizi Objesi (Api)
-const functionComputerArrayObject = () => {
-    // api'den gelen dizi objesi
-    const computerArrayObject = [
-        { computerName: "bilgisayar adı 1", price: 1000 },
-        { computerName: "bilgisayar adı 2", price: 2000 },
-        { computerName: "bilgisayar adı 3", price: 3000 },
-    ];
-    console.log(computerArrayObject);
-    return computerArrayObject;
-}
-
-// 1-) Call Back Function
-const callBackFunctionComputer = () => {
-    // api'den gelen dizi objesi
-    const computerArrayObject = functionComputerArrayObject();
-    //console.log(computerArrayObject);
-
-    // Bilgisayar Adı
-    const computerNameList = () => {
-        computerArrayObject.map((temp) => {
-            console.log(`${temp.computerName}`);
-        });
-    }
-    console.log(computerNameList());
-
-    // objeye call back ekle
-    const computerObjectAddList = (data, callBackFunction) => {
-        computerArrayObject.push(data);
-        callBackFunction();
-    }
-
-    // objeye yeni bir data ekleyerek callbackfunction örneğini yapmış olduk
-    computerObjectAddList({ computerName: "bilgisayar adı 4", price: 4000 }, computerNameList)
-}
-//callBackFunctionComputer();
-
-console.log("");
-
-// 2-) promise
-const promiseFunctionComputer = () => {
-    // api'den gelen dizi objesi
-    const computerArrayObject = functionComputerArrayObject();
-
-    // Bilgisayar Adı
-    const computerNameList = () => {
-        computerArrayObject.map((temp) => {
-            console.log(`${temp.computerName}`);
-        });
-    }
-    console.log(computerNameList());
-
-    // objeye promise Objesi üzerindan data ekle
-    const computerObjectAddList = (data) => {
-        const promiseReturnData = new Promise((resolve, reject) => {
-            computerArrayObject.push(data);
-        })
-        return promiseReturnData;
-    }
-
-    computerObjectAddList({ computerName: "bilgisayar adı 4", price: 4000 })
-        .then(() => { console.log("olumlu"); })
-        .catch((err) => { console.error(err); })
-    computerNameList()
-}
-//promiseFunctionComputer()
-
-console.log();
-
-// async/await
-// 2-) promise
-const asyncAwaitFunctionComputer = () => {
-    // api'den gelen dizi objesi
-    const computerArrayObject = functionComputerArrayObject();
-
-    // Bilgisayar Adı
-    const computerNameList = () => {
-        computerArrayObject.map((temp) => {
-            console.log(`${temp.computerName}`);
-        });
-    }
-    console.log(computerNameList());
-
-    // objeye promise Objesi üzerindan data ekle
-    const computerObjectAddList = (data) => {
-        const promiseReturnData = new Promise((resolve, reject) => {
-            computerArrayObject.push(data);
-        })
-        return promiseReturnData;
-    }
-
-    async function resultAsynAwait() {
-        const data = await computerObjectAddList({ computerName: "bilgisayar adı 4", price: 4000 })
-        console.log(data);
-    }
-
-    resultAsynAwait();
-    computerNameList();
-}
-//asyncAwaitFunctionComputer();
-
-///////////////////////////////////////////////////////////////////////////
-// Object
-const obje = () => {
-    let person = {
-        "name": "Hamit",
-        "surname": "Mızrak",
-        "number": 44,
-        "fullName": function () {
-            console.log("fonksiyon " + this.name + " " + this.surname);
-        },
-        "javase": ["variable", "optional", "stream"],
-        "java": {
-            "version": "1.8",
-            "date": "2017-09-20",
-        }
-    };
-    console.log(person);
-    console.log(person.name);
-    console.log(person["name"]);
-    console.log(person.name.toUpperCase());
-    console.log(typeof person.name.toUpperCase());
-    console.log(`${person.name} ${person.surname}`);
-    person.fullName();
-    person.isLogin = true;
-    console.log(person.isLogin);
-    console.log(person["isLogin"]);
-    console.log(person.javase[0]);
-    console.log(person.java.version);
-}
-//obje();
-
-const obje2 = () => {
-    let Person = function (adi, soyadi) {
-        this.adi = adi;
-        this.soyadi = soyadi;
-        console.log(this);
-    }
-    //console.log(Person);
-    //console.log(Person());
-    let data=new Person("Hamit","Mızrak");
-    //console.log(data);
-    console.log(data.adi);
-}
-//obje2();
-
-const obje3 = () => {
-    let data={
-        "adi":"Adim44",
-        "soyadi":"Soyadi44"
-    };
-    console.log(data);
-
-    const value=JSON.stringify(data).toUpperCase();
-    console.log(value);
-
-    const parseData=JSON.parse(value);
-    console.log(parseData);
-}
-//obje3();
-
-/*
-ÖDEV:
-1.adım: adınızı ve soyadınızı json objesine ekleyip
-2.adım: bu json objesini String'e çevirip
-3.adım: bu json objesini String'e çevirilmiş kısımdan substring fonksiyon metodu ile isim ve soyismini ayrıştır
-4.adım: adınızı ve soyasınız document.write ile ekranda gösterelim.
-ip uçu: JSON.stringfy  ve substring()
-*/
+// const dorduncu = (callbackFnc) => {
+//     let number = 16;
+//     callbackFnc(number);
+// }
+// // dorduncu(ucuncu);
 
 
-///////////////////////////////////////////////////////////////////////////
+// ////////////////////////////////////////////////
 
-// DOM
-const dom = () => {
-    //alert("Tıklandı")
-    //document.getElementById("paragId").innerHTML="değişti";
-    //document.querySelector("#paragId").innerHTML = "değişti";
-    //document.querySelector("#paragId").innerHTML = "<b>değişti</b>";
-    document.querySelector("#paragId").innerText = "<b>değişti</b>";
-    document.querySelector("#paragId").style.color = "blue";
-    document.querySelector("#paragId").style.backgroundColor = "black";
-    document.querySelector("#paragId").style.padding = "3rem";
-    document.querySelector("#paragId").style.marginTop = "1rem";
-}
+// // Dizi Objesi (Api)
+// const functionComputerArrayObject = () => {
+//     // api'den gelen dizi objesi
+//     const computerArrayObject = [
+//         { computerName: "bilgisayar adı 1", price: 1000 },
+//         { computerName: "bilgisayar adı 2", price: 2000 },
+//         { computerName: "bilgisayar adı 3", price: 3000 },
+//     ];
+//     console.log(computerArrayObject);
+//     return computerArrayObject;
+// }
 
-///////////////////////////////////////////////////////////////////////////
-// Event
-const deneme1 = () => {
-    alert("deneme")
-}
+// // 1-) Call Back Function
+// const callBackFunctionComputer = () => {
+//     // api'den gelen dizi objesi
+//     const computerArrayObject = functionComputerArrayObject();
+//     //console.log(computerArrayObject);
 
-const isOtherRedirectPage = () => {
-    let result = window.confirm("google gitmek istiyor musunuz ") ? window.location = "https://www.google.com" : window.alert("Sayfada kalındı");
-}
+//     // Bilgisayar Adı
+//     const computerNameList = () => {
+//         computerArrayObject.map((temp) => {
+//             console.log(`${temp.computerName}`);
+//         });
+//     }
+//     console.log(computerNameList());
 
-// EventListener
-document.getElementById("h1_id")
-    .addEventListener("click", (event) => {
-        alert("Tıklandı")
-    });
+//     // objeye call back ekle
+//     const computerObjectAddList = (data, callBackFunction) => {
+//         computerArrayObject.push(data);
+//         callBackFunction();
+//     }
+
+//     // objeye yeni bir data ekleyerek callbackfunction örneğini yapmış olduk
+//     computerObjectAddList({ computerName: "bilgisayar adı 4", price: 4000 }, computerNameList)
+// }
+// //callBackFunctionComputer();
+
+// console.log("");
+
+// // 2-) promise
+// const promiseFunctionComputer = () => {
+//     // api'den gelen dizi objesi
+//     const computerArrayObject = functionComputerArrayObject();
+
+//     // Bilgisayar Adı
+//     const computerNameList = () => {
+//         computerArrayObject.map((temp) => {
+//             console.log(`${temp.computerName}`);
+//         });
+//     }
+//     console.log(computerNameList());
+
+//     // objeye promise Objesi üzerindan data ekle
+//     const computerObjectAddList = (data) => {
+//         const promiseReturnData = new Promise((resolve, reject) => {
+//             computerArrayObject.push(data);
+//         })
+//         return promiseReturnData;
+//     }
+
+//     computerObjectAddList({ computerName: "bilgisayar adı 4", price: 4000 })
+//         .then(() => { console.log("olumlu"); })
+//         .catch((err) => { console.error(err); })
+//     computerNameList()
+// }
+// //promiseFunctionComputer()
+
+// console.log();
+
+// // async/await
+// // 2-) promise
+// const asyncAwaitFunctionComputer = () => {
+//     // api'den gelen dizi objesi
+//     const computerArrayObject = functionComputerArrayObject();
+
+//     // Bilgisayar Adı
+//     const computerNameList = () => {
+//         computerArrayObject.map((temp) => {
+//             console.log(`${temp.computerName}`);
+//         });
+//     }
+//     console.log(computerNameList());
+
+//     // objeye promise Objesi üzerindan data ekle
+//     const computerObjectAddList = (data) => {
+//         const promiseReturnData = new Promise((resolve, reject) => {
+//             computerArrayObject.push(data);
+//         })
+//         return promiseReturnData;
+//     }
+
+//     async function resultAsynAwait() {
+//         const data = await computerObjectAddList({ computerName: "bilgisayar adı 4", price: 4000 })
+//         console.log(data);
+//     }
+
+//     resultAsynAwait();
+//     computerNameList();
+// }
+// //asyncAwaitFunctionComputer();
+
+// ///////////////////////////////////////////////////////////////////////////
+// // Object
+// const obje = () => {
+//     let person = {
+//         "name": "Hamit",
+//         "surname": "Mızrak",
+//         "number": 44,
+//         "fullName": function () {
+//             console.log("fonksiyon " + this.name + " " + this.surname);
+//         },
+//         "javase": ["variable", "optional", "stream"],
+//         "java": {
+//             "version": "1.8",
+//             "date": "2017-09-20",
+//         }
+//     };
+//     console.log(person);
+//     console.log(person.name);
+//     console.log(person["name"]);
+//     console.log(person.name.toUpperCase());
+//     console.log(typeof person.name.toUpperCase());
+//     console.log(`${person.name} ${person.surname}`);
+//     person.fullName();
+//     person.isLogin = true;
+//     console.log(person.isLogin);
+//     console.log(person["isLogin"]);
+//     console.log(person.javase[0]);
+//     console.log(person.java.version);
+// }
+// //obje();
+
+// const obje2 = () => {
+//     let Person = function (adi, soyadi) {
+//         this.adi = adi;
+//         this.soyadi = soyadi;
+//         console.log(this);
+//     }
+//     //console.log(Person);
+//     //console.log(Person());
+//     let data=new Person("Hamit","Mızrak");
+//     //console.log(data);
+//     console.log(data.adi);
+// }
+// //obje2();
+
+// const obje3 = () => {
+//     let data={
+//         "adi":"Adim44",
+//         "soyadi":"Soyadi44"
+//     };
+//     console.log(data);
+
+//     const value=JSON.stringify(data).toUpperCase();
+//     console.log(value);
+
+//     const parseData=JSON.parse(value);
+//     console.log(parseData);
+// }
+// //obje3();
+
+// /*
+// ÖDEV:
+// 1.adım: adınızı ve soyadınızı json objesine ekleyip
+// 2.adım: bu json objesini String'e çevirip
+// 3.adım: bu json objesini String'e çevirilmiş kısımdan substring fonksiyon metodu ile isim ve soyismini ayrıştır
+// 4.adım: adınızı ve soyasınız document.write ile ekranda gösterelim.
+// ip uçu: JSON.stringfy  ve substring()
+// */
+
+
+// ///////////////////////////////////////////////////////////////////////////
+
+// // DOM
+// const dom = () => {
+//     //alert("Tıklandı")
+//     //document.getElementById("paragId").innerHTML="değişti";
+//     //document.querySelector("#paragId").innerHTML = "değişti";
+//     //document.querySelector("#paragId").innerHTML = "<b>değişti</b>";
+//     document.querySelector("#paragId").innerText = "<b>değişti</b>";
+//     document.querySelector("#paragId").style.color = "blue";
+//     document.querySelector("#paragId").style.backgroundColor = "black";
+//     document.querySelector("#paragId").style.padding = "3rem";
+//     document.querySelector("#paragId").style.marginTop = "1rem";
+// }
+
+// ///////////////////////////////////////////////////////////////////////////
+// // Event
+// const deneme1 = () => {
+//     alert("deneme")
+// }
+
+// const isOtherRedirectPage = () => {
+//     let result = window.confirm("google gitmek istiyor musunuz ") ? window.location = "https://www.google.com" : window.alert("Sayfada kalındı");
+// }
+
+// // EventListener
+// document.getElementById("h1_id")
+//     .addEventListener("click", (event) => {
+//         alert("Tıklandı")
+//     });
 ///////////////////////////////////////////////////////////////////////////
 // LocalStorage
 
+const loginButton=(e)=>{
+    //alert("çalıştır")
+    // Browser bir şey yapmasın
+    //e.preventDefault();
+
+    let username,surname;
+    username=document.getElementById("name_id").value;
+    surname=document.getElementById("surname_id").value;
+    //console.log(`${username} - ${surname}`);
+
+    // localStorage
+    localStorage.setItem("blog_username",username);
+    localStorage.setItem("blog_surname",surname);
+
+    // calling function
+    localStorageGetData();
+}
+
+const localStorageGetData=()=>{
+    let localUsername=localStorage.getItem("blog_username");
+    let localSurname=localStorage.getItem("blog_surname");
+    alert(localUsername+" "+ localSurname)
+}
 
 ///////////////////////////////////////////////////////////////////////////
 // jQuery
